@@ -63,7 +63,46 @@
 
     <div class="gallery">
         <h2>Gallery</h2>
-        <img src="updated_robotics_project_image.jpg" alt="Updated Robotics Project">
+        <div style="display: flex; justify-content: space-around; align-items: flex-start;">
+            <div style="flex: 1; text-align: center; padding: 10px; display: flex; flex-direction: column;">
+                <p style="font-size: 1.5em; margin-bottom: 5px; color: #333;">Photo 1: Birdseye view 1</p>
+                <img src="birdseye_1.png" alt="Birdseye view 1" style="width: 100%; height: auto; border-radius: 5px; margin-top: auto;">
+            </div>
+            <div style="flex: 1; text-align: center; padding: 10px; display: flex; flex-direction: column;">
+                <p style="font-size: 1.5em; margin-bottom: 50px; color: #333;">Photo 2: LiDAR image 1</p>
+                <img src="lidar_1.png" alt="LiDAR image 1" style="width: 100%; height: auto; border-radius: 5px; margin-top: auto;">
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-around; align-items: flex-start; margin-top: 20px;">
+            <div style="flex: 1; text-align: center; padding: 10px; display: flex; flex-direction: column;">
+                <p style="font-size: 1.5em; margin-bottom: 15px; color: #333;">Photo 3: Birdseye view 2</p>
+                <img src="birdseye_2.png" alt="Birdseye view 2" style="width: 100%; height: auto; border-radius: 5px; margin-top: auto;">
+            </div>
+            <div style="flex: 1; text-align: center; padding: 25px; display: flex; flex-direction: column;">
+                <p style="font-size: 1.5em; margin-bottom: 35px; color: #333;">Photo 4: LiDAR image 2</p>
+                <img src="lidar_2.png" alt="LiDAR image 2" style="width: 100%; height: auto; border-radius: 5px; margin-top: auto;">
+            </div>
+        </div>
+    </div>
+                            
+    <div class="videos">
+        <h2>Videos</h2>
+        <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+            <div style="flex: 1; max-width: 45%; padding: 10px; box-sizing: border-box;">
+                <video controls style="width: 100%; height: auto; border-radius: 5px;">
+                    <source src="path_to_video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Video 1: Description...</p>
+            </div>
+            <div style="flex: 1; max-width: 45%; padding: 10px; box-sizing: border-box;">
+                <video controls style="width: 100%; height: auto; border-radius: 5px;">
+                    <source src="path_to_video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Video 2: Description...</p>
+            </div>
+        </div>
     </div>
 
     <div class="tech">
