@@ -54,22 +54,57 @@
     </div>
 
     <div class="updates">
-        <h2>Development Updates</h2>
-        <ul>
-            <li>Update 1: Determined needed parts and locations for installation of electronics into the body of the dingo. Installed Arduino Nano, ServoBoard, Switches, Rasberry Pi, and custom PCB</li>
-            <li>Update 2: Ordered and installed 2200uF capacitor into ServoBoard and tested motor actuation directly via Arduino Nano</li>
-            <li>Update 3: Rebuilt the dingo to only include the minimum amount of parts to test servos and wiring (Ardiuno Nano, ServoBoard, and a battery pack)</li>
-            <li>Update 4: Decided to abandon the custom PCB and power delivery system and directly power components from a LiPO battery and buck converters</li>
-            <li>Update 5: Uninstalled the Arduino Nano and swiched controllers to a Rasberry Pi, while the original Dingo uses a Nano, the I2C bus was unable to detect it. Because the Nano only monitors the voltage of the battery in order to avoid completely discharging it, we decided to use a manual battery alarm instead and remove the Nano from the ROS configuration.</li>
-            <li>Update 6: Installed Ubuntu 23.10 on the Rasberry Pi, as well as installing and building ROS packages for both the Dingo control and to interface with the LiDAR</li>
-            <li>Update 7: Modified Dingo input controllers to get between the keyboard controller and the dingo itself to inject movement commands</li>
-            <li>Update 8: Installed LiDAR onto the Dingo and tested how it would output information in order to parse it for the dingo controller to use</li>
-            <li>Update 9: Created a ROS controller node that listens to the LiDAR publisher and sends instructions to the modified keyboard controller</li>
-            <li>Update 10: After testing the currently installed buck converters, it was apparent that the buck converters we are using are unable to push the current we need and instead drops the voltage below what the servos can operate on</li>
-            <li>Update 11: Created a 20A buck converter by wiring 2A buck converters in parallel and observed a much stronger gait, however this jerry-rigged 20A converted quickly failed and was deemed too unstable to continue using</li>
-            <li>Update 11: Finished control program for the dingo, the controller now actively reads the LiDAR output and makes movement descisions to avoid walls</li>
-        </ul>
+    <h2>Development Updates</h2>
+    <div class="update">
+        <h3 style="text-align:center;">Update #1:</h3>
+        <p>Determined needed parts and locations for installation of electronics into the body of the dingo. Installed Arduino Nano, ServoBoard, Switches, Rasberry Pi, and custom PCB</p>
     </div>
+    <div class="update">
+        <h3 style="text-align:center;">Update #2:</h3>
+        <p>Ordered and installed 2200uF capacitor into ServoBoard and tested motor actuation directly via Arduino Nano</p>
+    </div>
+    <div class="update">
+        <h3 style="text-align:center;">Update #3:</h3>
+        <p>Rebuilt the dingo to only include the minimum amount of parts to test servos and wiring (Ardiuno Nano, ServoBoard, and a battery pack)</p>
+    </div>
+    <div class="update">
+        <h3 style="text-align:center;">Update #4:</h3>
+        <p>Decided to abandon the custom PCB and power delivery system and directly power components from a LiPO battery and buck converters</p>
+    </div>
+    <div class="update">
+        <h3 style="text-align:center;">Update #5:</h3>
+        <p>Uninstalled the Arduino Nano and switched controllers to a Rasberry Pi, while the original Dingo uses a Nano, the I2C bus was unable to detect it. Because the Nano only monitors the voltage of the battery in order to avoid completely discharging it, we decided to use a manual battery alarm instead and remove the Nano from the ROS configuration.</p>
+    </div>
+    <div class="update">
+        <h3 style="text-align:center;">Update #6:</h3>
+        <p>Installed Ubuntu 23.10 on the Rasberry Pi, as well as installing and building ROS packages for both the Dingo control and to interface with the LiDAR</p>
+    </div>
+    <div class="update">
+        <h3 style="text-align:center;">Update #7:</h3>
+        <p>Modified Dingo input controllers to get between the keyboard controller and the dingo itself to inject movement commands</p>
+    </div>
+    <div class="update">
+        <h3 style="text-align:center;">Update #8:</h3>
+        <p>Installed LiDAR onto the Dingo and tested how it would output information in order to parse it for the dingo controller to use</p>
+    </div>
+    <div class="update">
+        <h3 style="text-align:center;">Update #9:</h3>
+        <p>Created a ROS controller node that listens to the LiDAR publisher and sends instructions to the modified keyboard controller</p>
+    </div>
+    <div class="update">
+        <h3 style="text-align:center;">Update #10:</h3>
+        <p>After testing the currently installed buck converters, it was apparent that the buck converters we are using are unable to push the current we need and instead drops the voltage below what the servos can operate on</p>
+    </div>
+    <div class="update">
+        <h3 style="text-align:center;">Update #11:</h3>
+        <p>Created a 20A buck converter by wiring 2A buck converters in parallel and observed a much stronger gait, however this jerry-rigged 20A converted quickly failed and was deemed too unstable to continue using</p>
+    </div>
+    <div class="update">
+        <h3 style="text-align:center;">Update #11:</h3>
+        <p>Finished control program for the dingo, the controller now actively reads the LiDAR output and makes movement decisions to avoid walls</p>
+    </div>
+</div>
+
 
     <div class="gallery">
         <h2>Gallery</h2>
