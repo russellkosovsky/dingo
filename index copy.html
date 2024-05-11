@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dingo</title>
+    <style>
+        body {
+            background-color: #ffcc00; /* Yellow background */
+            color: #000; /* Black text */
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #0000ff; /* Blue text */
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        .container {
+            background-color: #ffffff; /* White background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #888888; /* Gray text */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Dingo</h1>
+
+    <div class="container">
+        <p>Team Members: Jay Nash, Russell Kosovsky</p>
+
+        <img src="robotics_project_image.jpg" alt="Robotics Project">
+
+        <p>This project focuses on rebuilding the dingo quadruped as it is currently in an unfinished state. We plan to fully rebuild the dingo into a platform for use in gait evolution and possibly other forms of objective seeking/evolved behavior. The dingo has a simulated environment that will be used to train the gait in a simulated environment before applying that learned behavior to the real world. We are looking into using Punctuated Anytime Learning for this process in order to better translate simulated behavior to real world behavior. Additionally, we would like to implement a variety of types of genetic algorithms to optimize the gait/behavior in order to determine what type of genetic algorithm works best for a problem. For example, we may use a cyclic genetic algorithm with punctuated anytime learning to evolve a gait, and then use a more standard GA to evolve the behavior of the robot. This last objective might not be entirely feasible but it is something that we discussed and thought might be interesting to look into.</p>
+    </div>
+
+    <footer>
+        &copy; 2024 The Dingo Quadraped. All rights reserved.
+    </footer>
+
+</body>
+</html>
