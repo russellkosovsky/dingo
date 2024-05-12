@@ -60,6 +60,22 @@
         <p>rpLiDAR ROS Repository: <a href="https://github.com/robopeak/rplidar_ros/">rplidar_ros</a></p>
     </div>
 
+    <div class="tech">
+        <h2>How it Works</h2>
+        <div class="techreview">
+            <h3 style="text-align:center;">Control Circuit</h3>
+            <p>A controller node is used to recieve LiDAR updates and determine the proper actions to take</p>
+        </div>
+        <div class="techreview">
+            <h3 style="text-align:center;">Input Controller</h3>
+            <p>A previously existing input controller was modified to accept action commands from the control circuit and inject them into the actual control commands sent to the dingo</p>
+        </div>
+        <div class="techreview">
+            <h3 style="text-align:center;">ROS Launch Modifications</h3>
+            <p>As the control circuit needed to run in parallel with the dingo, it was loaded as a standalone ROS node and used ROS publication and subscription commands to interface with the LiDAR and input controller</p>
+        </div>
+    </div>
+
     <div class="updates">
         <h2>Development Updates</h2>
         <div class="update">
@@ -210,11 +226,6 @@
                 <p>Video 2: Example of gait response to LiDAR detection</p>
             </div>
         </div>
-    </div>
-    
-    <div class="tech">
-        <h2>Section</h2>
-        <p>blah blah blah blah blah blah...</p>
     </div>
 
     <footer>
