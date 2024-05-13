@@ -66,14 +66,14 @@
         <div class="techreview">
             <h3 style="text-align:center;">Control Circuit</h3>
             <div style="display: flex; justify-content: space-around; align-items: center;">
-                    <img src="assets/controller.png" alt="Controller 1" style="width: 37%; height: auto; border-radius: 5px; margin-top: auto;">
+                    <img src="assets/controller.png" alt="Controller 1" style="width: 100%; height: auto; border-radius: 5px; margin-top: auto;">
             </div>
             <p>A controller node is used to recieve LiDAR updates and determine the proper actions to take. The logic section is collapsed for brevity but it contains a small expert system to decide on which way the dingo should attempt to move in order to avoid walls.</p>
         </div>
         <div class="techreview">
             <h3 style="text-align:center;">Input Controller</h3>
             <div style="display: flex; justify-content: space-around; align-items: center;">
-                <img src="assets/keyboard.png" alt="keyboard" style="width: 40%; height: auto; border-radius: 5px; margin-top: auto;">
+                <img src="assets/keyboard.png" alt="keyboard" style="width: 100%; height: auto; border-radius: 5px; margin-top: auto;">
             </div>
             <p>A previously existing input controller was modified to accept action commands from the control circuit and inject them into the actual control commands sent to the dingo. The control circut will use its expert system to parse the LiDAR data and publish a command. This code will recieve that command and update the control settings accordingly. This is not the most ideal way to accomplish this, as we effectively hijack the keyboard controller entirely. However this approach has seemed the most stable and easy to modify.</p>
         </div>
