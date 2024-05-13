@@ -62,30 +62,25 @@
 
     <div class="tech">
         <h2>How it Works</h2>
-        <div style="display: flex; justify-content: space-around; align-items: flex-start;">
-        <div class="techreview">
-            <h3 style="text-align:center;">Control Circuit</h3>
-            <div style="display: flex; justify-content: space-around; align-items: center;">
-                    <img src="assets/controller.png" alt="Controller 1" style="width: 100%; height: auto; border-radius: 5px; margin-top: auto;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
+            <div class="techreview" style="flex: 1; margin-right: 10px;">
+                <h3 style="text-align:center;">Control Circuit</h3>
+                <img src="assets/controller.png" alt="Controller 1" style="width: 80%; height: auto; border-radius: 5px;">
+                <p>A controller node is used to receive LiDAR updates and determine the proper actions to take. The logic section is collapsed for brevity but it contains a small expert system to decide on which way the dingo should attempt to move in order to avoid walls.</p>
             </div>
-            <p>A controller node is used to recieve LiDAR updates and determine the proper actions to take. The logic section is collapsed for brevity but it contains a small expert system to decide on which way the dingo should attempt to move in order to avoid walls.</p>
-        </div>
-        <div class="techreview">
-            <h3 style="text-align:center;">Input Controller</h3>
-            <div style="display: flex; justify-content: space-around; align-items: center;">
-                <img src="assets/keyboard.png" alt="keyboard" style="width: 100%; height: auto; border-radius: 5px; margin-top: auto;">
+            <div class="techreview" style="flex: 1; margin-left: 10px;">
+                <h3 style="text-align:center;">Input Controller</h3>
+                <img src="assets/keyboard.png" alt="keyboard" style="width: 80%; height: auto; border-radius: 5px;">
+                <p>A previously existing input controller was modified to accept action commands from the control circuit and inject them into the actual control commands sent to the dingo. This code will receive that command and update the control settings accordingly. This is not the most ideal way to accomplish this, as we effectively hijack the keyboard controller entirely. However this approach has seemed the most stable and easy to modify.</p>
             </div>
-            <p>A previously existing input controller was modified to accept action commands from the control circuit and inject them into the actual control commands sent to the dingo. The control circut will use its expert system to parse the LiDAR data and publish a command. This code will recieve that command and update the control settings accordingly. This is not the most ideal way to accomplish this, as we effectively hijack the keyboard controller entirely. However this approach has seemed the most stable and easy to modify.</p>
         </div>
-        </div>
-        <div class="techreview">
-            <h3 style="text-align:center;">ROS Launch Modifications</h3>
-            <div style="display: flex; justify-content: space-around; align-items: center;">
-                <img src="assets/launch.png" alt="keyboard" style="width: 50%; height: auto; border-radius: 5px; margin-top: auto;">
-            </div>
+        <div class="techreview" style="text-align:center;">
+            <h3>ROS Launch Modifications</h3>
+            <img src="assets/launch.png" alt="Launch" style="width: 50%; height: auto; border-radius: 5px;">
             <p>As the control circuit needed to run in parallel with the dingo, it was loaded as a standalone ROS node and used ROS publication and subscription commands to interface with the LiDAR and input controller. The above picture includes the nodes for the keyboard controller (that has been hijacked for our control system), the dingo itself, the LiDAR, and the controller node.</p>
         </div>
     </div>
+    
 
     <div class="updates">
         <h2>Development Updates</h2>
