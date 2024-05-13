@@ -62,6 +62,7 @@
 
     <div class="tech">
         <h2>How it Works</h2>
+        <div style="display: flex; justify-content: space-around; align-items: flex-start;">
         <div class="techreview">
             <h3 style="text-align:center;">Control Circuit</h3>
             <div style="display: flex; justify-content: space-around; align-items: center;">
@@ -75,6 +76,7 @@
                 <img src="assets/keyboard.png" alt="keyboard" style="width: 40%; height: auto; border-radius: 5px; margin-top: auto;">
             </div>
             <p>A previously existing input controller was modified to accept action commands from the control circuit and inject them into the actual control commands sent to the dingo. The control circut will use its expert system to parse the LiDAR data and publish a command. This code will recieve that command and update the control settings accordingly. This is not the most ideal way to accomplish this, as we effectively hijack the keyboard controller entirely. However this approach has seemed the most stable and easy to modify.</p>
+        </div>
         </div>
         <div class="techreview">
             <h3 style="text-align:center;">ROS Launch Modifications</h3>
